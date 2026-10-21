@@ -13,25 +13,25 @@ public class Coursemodel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "student_id")
+
     private int studentId;
 
     @Column(name = "student_name")
     private String sname;
 
-    @Column(name = "course_duration")
+    @Column(name = "sduration")
     private String courseduration;
 
-    @Column(name = "course_name")
+    @Column(name = "scoursename")
     private String coursename;
 
-    @Column(name = "course_time")
+    @Column(name = "scoursetime")
     private String coursetime;
 
-    @Column(name = "days")
+    @Column(name = "noofdays")
     private int days;
 
-    @Column(name = "phone_number")
+    @Column(name = "sphoneno")
     private long phoneno;
 
     public Coursemodel() {

@@ -23,15 +23,15 @@ public class Adminmodel {
     private String adminname;
 
     @Column(name = "password")
-    private String password;
+    private String adminpassword;
 
     public Adminmodel() {
     }
 
-    public Adminmodel(String adminid, String adminname, String password) {
+    public Adminmodel(String adminid, String adminname, String adminpassword) {
         this.adminid = adminid;
         this.adminname = adminname;
-        this.password = password;
+        this.adminpassword = adminpassword;
     }
 
     public int getSerialno() {
@@ -58,11 +58,11 @@ public class Adminmodel {
         this.adminname = adminname;
     }
 
-    public String getPassword() {
-        return password;
+    public String getAdminpassword() {
+        return adminpassword;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setAdminpassword(String adminpassword) {
+        this.adminpassword = adminpassword;
     }
 }
